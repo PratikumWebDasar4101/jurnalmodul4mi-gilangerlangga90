@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Data Hobi </title>
 </head>
 <body>
-silakan isi disini
+	<center> <h1> DATA HOBI </h1> </center>
+	<h3> Silahkan isi data-data di bawah ini!</h3>
+	<table>
+		<form method="POST" action="proses.php" enctype="multipart/form-data">
+
+			<tr>
+				<td> Hobi </td>
+				<td> : </td>
+				<td> 
+					<input type="Checkbox" name="hobi[]" value="Gulat"> Gulat <br>
+					<input type="Checkbox" name="hobi[]" value="Pencak Silat"> Pencak Silat <br>
+					<input type="Checkbox" name="hobi[]" value="Membaca"> Membaca
+				</td>
+			</tr>
+
+			<tr>
+				<td> Foto </td>
+				<td> : </td>
+				<td> <input type="file" name="foto"></td>
+			</tr>
+
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td> <input type="submit" name="simpan" value="SIMPAN"></td>
+			</tr>
+		</form>
+	</table>
 
 </body>
 </html>
